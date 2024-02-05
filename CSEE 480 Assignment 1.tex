@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{array}
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+\usepackage[letterpaper, portrait, margin=2.5cm]{geometry}
+
+\begin{document}
+    \input{sections/title.tex}
+
+    \tableofcontents
+    \newpage
+
+    \section{VISION}
+    \input{sections/vision}
+    \newpage
+
+    \section{BACKGROUND RESEARCH}
+    \input{sections/background research.tex}
+    \newpage
+
+    \section{REQUIREMENTS SPECIFICATION}
+    \input{sections/requirements specification.tex}
+    \newpage
+
+    \section{REFERENCES}
+    \input{sections/references.tex}
+    \newpage
+
+\end{document}
