@@ -1,3 +1,9 @@
-!*.pdf
-!*.tex
-!*.bib
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.xml
+*.gz
+*.toc
