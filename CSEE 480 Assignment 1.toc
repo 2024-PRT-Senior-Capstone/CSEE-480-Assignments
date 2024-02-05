@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1}VISION}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Problem Statement}{2}{}%
+\contentsline {subsection}{\numberline {1.2}Functional Specifications}{2}{}%
+\contentsline {subsection}{\numberline {1.3}Constraints}{2}{}%
+\contentsline {section}{\numberline {2}BACKGROUND RESEARCH}{3}{}%
+\contentsline {subsection}{\numberline {2.1}PRT Background and History}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Prior Works}{3}{}%
+\contentsline {subsection}{\numberline {2.3}Justification}{3}{}%
+\contentsline {section}{\numberline {3}REQUIREMENTS SPECIFICATION}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Functional Requirements}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Engineering Requirements}{4}{}%
+\contentsline {subsection}{\numberline {3.3}Marketing Requirements}{4}{}%
+\contentsline {subsection}{\numberline {3.4}Mapping of Marketing Requirements to Engineering Requirements}{4}{}%
+\contentsline {subsection}{\numberline {3.5}Engineering and Marketing Requirements trade-off chart}{4}{}%
+\contentsline {subsection}{\numberline {3.6}Competitive Benchmarks}{4}{}%
+\contentsline {subsection}{\numberline {3.7}Various applicable constraints and standards}{4}{}%
+\contentsline {subsection}{\numberline {3.8}Broader Requirements and Constraints}{4}{}%
+\contentsline {section}{\numberline {4}REFERENCES}{5}{}%
+\contentsline {subsection}{\numberline {4.1}Sources}{5}{}%
+\contentsline {subsection}{\numberline {4.2}Contribution Table}{5}{}%
