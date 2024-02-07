@@ -2,7 +2,15 @@
 \usepackage{array}
 \usepackage{tikz}
 \usepackage{etoolbox}
+\usepackage{indentfirst}
+\usepackage{makecell}
 \usepackage[letterpaper, portrait, margin=2.5cm]{geometry}
+
+% Add padding inside of Cells
+\renewcommand\cellgape{\Gape[4pt]}
+
+% Add spacing between paragraphs
+\setlength{\parskip}{\baselineskip}
 
 % Remove References header from bibliography
 \patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
@@ -18,18 +26,13 @@
 
     \section{VISION}
     \input{sections/vision}
-    \newpage
-
+    
     \section{BACKGROUND RESEARCH}
     \input{sections/background research.tex}
-    \newpage
 
     \section{REQUIREMENTS SPECIFICATION}
     \input{sections/requirements specification.tex}
-    \newpage
 
     \section{REFERENCES}
     \input{sections/references.tex}
-    \newpage
-
 \end{document}

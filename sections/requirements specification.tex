@@ -1,8 +1,33 @@
 \subsection{Functional Requirements}
+\begin{enumerate}
+    \item Analyze location and power data. 
+    \item Display data in a single-page user interface.
+    \item Track vehicle occupancy
+    \item Supply data to PRT officials to increase the efficiency of the PRT system.
+\end{enumerate}
 
 \subsection{Engineering Requirements}
+\begin{enumerate}
+    \item Equip PRT cars with a Raspberry Pi 4 model B. 
+    \item Attach additional sensors (GPS, Current Clamp)
+    \item Devices should be non-visible to the occupants
+    \item Data will be transmitted to the database while at PRT platforms.
+    \item Data will be transmitted wirelessly. 
+    \item Data transmitted will be encrypted. 
+    \item Data will be stored in an SQL database. 
+    \item Database will be kept in a secure fashion to ensure confidentiality of data
+    \item Use of Infrared or Lidar to determine vehicle occupancy
+    \item Use data collected to make predictions
+\end{enumerate}
 
 \subsection{Marketing Requirements}
+\begin{enumerate}
+    \item An automated design for monitoring GPS, AC power, and passenger amount.
+    \item Low-cost devices compared to dedicated hardware.
+    \item Reduce congestion at PRT stations.
+    \item Protect PRT carts from combustion due to higher-than-normal voltage.
+    \item Prevent carts from unintentional shutdowns.    
+\end{enumerate}
 
 \subsection{Mapping of Marketing Requirements to Engineering Requirements}
 
@@ -28,7 +53,13 @@
 \end{center}
 
 \subsection{Competitive Benchmarks}
+The product we hope to design meets a niche need. Because of that, there are few to no direct competitors. There are related systems worldwide, but their data analysis systems are proprietary information. Our closest competitor is the group working on the same project in CSEE481. At the current time, their work is inaccessible to us.
 
 \subsection{Various applicable constraints and standards}
+\begin{itemize}
+    \item \textbf{Legal:} This project will have no negative impact on students riding the PRT so there will not be any legal constraints for our PRT project.
+    \item \textbf{Privacy:} There isn't going to be any personal information collected on students riding the PRT. Instead, we will be using LiDAR to determine car capacity.
+    \item \textbf{Sustainability:} This device can be used for several years to get data from the PRT. The device will also be implemented in a fashion that does not allow outside forces to damage it
+\end{itemize}
 
 \subsection{Broader Requirements and Constraints}
