@@ -1,10 +1,17 @@
-\documentclass{article}
+\documentclass[10pt]{article}
 \usepackage{array}
 \usepackage{tikz}
 \usepackage{etoolbox}
 \usepackage{indentfirst}
 \usepackage{makecell}
+\usepackage{graphicx}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+\usepackage{tabularx}
 \usepackage[letterpaper, portrait, margin=2.5cm]{geometry}
+
+% Set image folder path
+\graphicspath{ {./images/} }
 
 % Add padding inside of Cells
 \renewcommand\cellgape{\Gape[4pt]}
@@ -26,7 +33,7 @@
 
     \section{VISION}
     \input{sections/vision}
-    
+
     \section{BACKGROUND RESEARCH}
     \input{sections/background research.tex}
 

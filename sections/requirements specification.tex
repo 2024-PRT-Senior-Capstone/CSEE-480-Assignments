@@ -1,23 +1,24 @@
 \subsection{Functional Requirements}
 \begin{enumerate}
-    \item Analyze location and power data. 
+    \item Analyze location and power data.
     \item Display data in a single-page user interface.
-    \item Track vehicle occupancy
+    \item Track vehicle occupancy.
+    \item Track vehicle location and time to complete a ride.
     \item Supply data to PRT officials to increase the efficiency of the PRT system.
 \end{enumerate}
 
 \subsection{Engineering Requirements}
 \begin{enumerate}
     \item Equip PRT cars with a Raspberry Pi 4 model B. 
-    \item Attach additional sensors (GPS, Current Clamp)
-    \item Devices should be non-visible to the occupants
+    \item Attach additional sensors (GPS, Current Clamp).
+    \item Devices should be non-visible to the occupants.
     \item Data will be transmitted to the database while at PRT platforms.
-    \item Data will be transmitted wirelessly. 
+    \item Data will be transmitted wirelessly.
     \item Data transmitted will be encrypted. 
-    \item Data will be stored in an SQL database. 
-    \item Database will be kept in a secure fashion to ensure confidentiality of data
-    \item Use of Infrared or Lidar to determine vehicle occupancy
-    \item Use data collected to make predictions
+    \item Data will be stored in an SQL database.
+    \item The database will be kept securely to ensure the confidentiality of data.
+    \item Use of Infrared or Lidar to determine vehicle occupancy.
+    \item Use data collected to make predictions.
 \end{enumerate}
 
 \subsection{Marketing Requirements}
@@ -26,30 +27,50 @@
     \item Low-cost devices compared to dedicated hardware.
     \item Reduce congestion at PRT stations.
     \item Protect PRT carts from combustion due to higher-than-normal voltage.
-    \item Prevent carts from unintentional shutdowns.    
+    \item Prevent carts from unintentional shutdowns.
 \end{enumerate}
 
 \subsection{Mapping of Marketing Requirements to Engineering Requirements}
+Most of the requirements for our project's marketing and engineering aspects are directly proportional to each other. The specifications on hardware and devices in both sets of requirements require automation and wireless communication, which satisfies both sets. However, our engineering requirements will not directly cause lower congestion times, protection from combustion, and unintentional shutdowns. This is because we will collect the data from our project and send it to the PRT engineering team, who can then make decisions to improve the PRT based on the data.
 
 \subsection{Engineering and Marketing Requirements trade-off chart}
 \begin{center}
-    \begin{tabular}{|c|c|c|c|} 
+    Table 1: Engineering \& Marketing Rade-off Chart w/ Legend
+    \begin{tabularx}{\textwidth}{|X|X|X|}
         \hline
-         & Must Meet & Adjust & Accept \\
-         \hline
-         Data Transport & \checkmark & & \\
-         \hline
-         GPS Tracking & \checkmark & & \\
-         \hline
-         Real-time tracking & & & \checkmark \\
-         \hline
-         AC Power Sensing & \checkmark & & \\
-         \hline
-         Passenger Counter & & \checkmark & \\
-         \hline
-         Passenger Volume & & \checkmark & \\
-         \hline
-    \end{tabular}
+        \checkmark : Meets Requirement & - : Low & + : High \\
+        \hline
+    \end{tabularx}
+    \begin{tabularx}{\textwidth}{|X|c|c|c|c|c|} 
+        \hline
+        & Speed & Performance & Cost & Security & Real-time Efficiency\\
+        \hline
+        Data transport (TCP) & - & + & & + & \\
+        \hline
+        Data encryption (TLS) & + & + & & + & \\
+        \hline
+        Data storage (micro SD) & + & & & & \\
+        \hline
+        GPS & & & - & & \\
+        \hline
+        Wireless Modem & & & & & \checkmark \\
+        \hline
+        SIM Card (LTE) & - & - & -\textbf{/mo} & + & \checkmark \\
+        \hline
+        SIM Card (4G) & + & + & +\textbf{/mo} & + & \checkmark \\
+        \hline
+        Wi-Fi & ++ & & - & - & - \\
+        \hline
+        AC power sensing (Current Clamp) & & & & & \\
+        \hline
+        Raspberry Pi & \checkmark & \checkmark & - & & \\
+        \hline
+        LiDAR & + & + & +/- & & \\
+        \hline
+    \end{tabularx}
+    \begin{flushleft}
+        Note: SIM Card cost is an ongoing cost encurred monthly
+    \end{flushleft}
 \end{center}
 
 \subsection{Competitive Benchmarks}
@@ -57,9 +78,11 @@ The product we hope to design meets a niche need. Because of that, there are few
 
 \subsection{Various applicable constraints and standards}
 \begin{itemize}
-    \item \textbf{Legal:} This project will have no negative impact on students riding the PRT so there will not be any legal constraints for our PRT project.
-    \item \textbf{Privacy:} There isn't going to be any personal information collected on students riding the PRT. Instead, we will be using LiDAR to determine car capacity.
-    \item \textbf{Sustainability:} This device can be used for several years to get data from the PRT. The device will also be implemented in a fashion that does not allow outside forces to damage it
+    \item \textbf{Legal:} This project will have no negative impact on students riding the PRT, so there will not be any legal constraints for our PRT project.
+    \item \textbf{Privacy:} There isn't going to be any personal information collected on students riding the PRT. Instead, we will use LiDAR to determine car capacity.
+    \item \textbf{Sustainability:} This device can be used for several years to get data from the PRT. The device will also have secure housing to prevent outside forces from damaging it, increasing its sustainability.
+    \item \textbf{Economic:} Any sensors that will attach to the Raspberry Pi for this project or in the future should be inexpensive and within WVU’s budget.
 \end{itemize}
 
 \subsection{Broader Requirements and Constraints}
+This project will not have much effect on other industries, as this project is focused on improving and collecting data for WVU 's PRT system, and will be used entirely for and within WVU’s PRT system.
