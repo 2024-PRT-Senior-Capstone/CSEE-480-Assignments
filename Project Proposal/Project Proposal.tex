@@ -1,0 +1,51 @@
+\documentclass[10pt]{article}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{etoolbox}
+\usepackage{indentfirst}
+\usepackage{makecell}
+\usepackage{graphicx}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+\usepackage{tabularx}
+\usepackage[letterpaper, portrait, margin=2.5cm]{geometry}
+
+% Set image folder path
+\graphicspath{ {./images/} }
+
+% Add padding inside of Cells
+\renewcommand\cellgape{\Gape[4pt]}
+
+% Add spacing between paragraphs
+\setlength{\parskip}{\baselineskip}
+
+% Remove References header from bibliography
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+% Create checkmark command
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+\begin{document}
+    \input{sections/title.tex}
+
+    \tableofcontents
+    \newpage
+
+    \section{Problem Statement}
+    \input{sections/problem statement.tex}
+
+    \section{Feasibility}
+    \input{sections/feasability.tex}
+
+    \section{Requirements Specification}
+    \input{sections/requirements specfication.tex}
+
+    \section{Proposed Architecture}
+    \input{sections/proposed architecture.tex}
+
+    \section{Proposed Timeline}
+    \input{sections/proposed timeline.tex}
+
+    \section{References}
+    \input{sections/references.tex}
+\end{document}

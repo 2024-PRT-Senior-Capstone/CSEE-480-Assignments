@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Problem Statement}{2}{}%
+\contentsline {section}{\numberline {2}Feasibility}{2}{}%
+\contentsline {section}{\numberline {3}Requirements Specification}{2}{}%
+\contentsline {section}{\numberline {4}Proposed Architecture}{3}{}%
+\contentsline {section}{\numberline {5}Proposed Timeline}{3}{}%
+\contentsline {section}{\numberline {6}References}{4}{}%
