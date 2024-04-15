@@ -1,0 +1,64 @@
+\documentclass[10pt]{article}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{etoolbox}
+\usepackage{indentfirst}
+\usepackage{makecell}
+\usepackage{graphicx}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage[letterpaper, portrait, margin=2.5cm]{geometry}
+
+% Setup hyperlinks
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+% Set image folder path
+\graphicspath{ {./images/} }
+
+% Add padding inside of Cells
+\renewcommand\cellgape{\Gape[4pt]}
+
+% Add spacing between paragraphs
+\setlength{\parskip}{\baselineskip}
+
+% Remove References header from bibliography
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+% Create checkmark command
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+\begin{document}
+\input{sections/title.tex}
+
+    \tableofcontents
+    \newpage
+
+    \section{Project Goals}
+    \input{sections/project goals.tex}
+
+    \section{Design Requirements and Constraints}
+    \input{sections/design requirements and constraints.tex}
+
+    \section{Project Management}
+    \input{sections/project management.tex}
+
+    \section{System Design}
+    \input{sections/system design.tex}
+
+    \section{Individual Contributions}
+    \input{sections/individual contributions.tex}
+
+    \section{Lessons Learned}
+    \input{sections/lessons learned.tex}
+
+    \section{References}
+    \input{sections/references.tex}
+\end{document}
