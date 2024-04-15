@@ -1,0 +1,38 @@
+\begin{center}
+    Table 1: Engineering \& Marketing Rade-off Chart w/ Legend
+    \begin{tabularx}{\textwidth}{|X|X|X|}
+        \hline
+        \checkmark : Meets Requirement & - : Low & + : High \\
+        \hline
+    \end{tabularx}
+    \begin{tabularx}{\textwidth}{|X|c|c|c|c|c|} 
+        \hline
+        & Speed & Performance & Cost & Security & Real-time Efficiency\\
+        \hline
+        Data transport (TCP) & - & + & & + & \\
+        \hline
+        Data encryption (TLS) & + & + & & + & \\
+        \hline
+        Data storage (micro SD) & + & & & & \\
+        \hline
+        GPS & & & - & & \\
+        \hline
+        Wireless Modem & & & & & \checkmark \\
+        \hline
+        SIM Card (LTE) & - & - & -\textbf{/mo} & + & \checkmark \\
+        \hline
+        SIM Card (4G) & + & + & +\textbf{/mo} & + & \checkmark \\
+        \hline
+        Wi-Fi & ++ & & - & - & - \\
+        \hline
+        AC power sensing (Current Clamp) & & & & & \\
+        \hline
+        Raspberry Pi & \checkmark & \checkmark & - & & \\
+        \hline
+        LiDAR & + & + & +/- & & \\
+        \hline
+    \end{tabularx}
+    \begin{flushleft}
+        Note: SIM Card cost is an ongoing cost encurred monthly
+    \end{flushleft}
+\end{center}

@@ -1,0 +1,107 @@
+\begin{adjustwidth}{-75pt}{-100pt}
+    \begin{ganttchart}[
+        vgrid,
+        newline shortcut=false,
+        y unit chart=.75cm,
+        y unit title=0.5cm,
+        title height=1.0,
+        bar height=0.6,
+        group height=0.3,
+        group progress label node/.append style={below=100pt},
+        group progress label font=\color{white!0!white}\sffamily,
+        group label node/.append style=%
+        bar progress label node/.append style={below=100pt},
+        bar progress label font=\color{white!0!white}\sffamily,
+        bar label node/.append style=%
+        {align=left}
+        ]{1}{32}
+        \gantttitle{Spring 2024}{16}
+        \gantttitle{Fall 2024}{16} \ganttnewline
+    
+        \gantttitle{Hardware}{14}
+        \gantttitle{Link}{4}
+        \gantttitle{Software}{14} \ganttnewline
+    
+        \ganttgroup[progress=78]{Phase 1}{1}{4} \ganttnewline
+        \ganttbar[progress=100]{
+            Draft architectures
+        }{1}{1} \ganttnewline
+        \ganttbar[progress=100]{
+            Acquire Raspberry Pi
+        }{2}{2} \ganttnewline
+        \ganttbar[progress=67]{
+            Acquire Sensors
+        }{2}{2} \ganttnewline
+        \ganttbar[progress=67]{
+            Test hardware
+        }{3}{3} \ganttnewline
+        \ganttbar[progress=67]{
+            Gather preliminary data
+        }{3}{3} \ganttnewline
+        \ganttbar[progress=67]{
+            Configure hardware
+        }{4}{4} \ganttnewline
+    
+        \ganttgroup[progress=67]{Phase 2}{5}{9} \ganttnewline
+        \ganttbar[progress=100]{
+            Connect GPS 
+        }{5}{5} \ganttnewline
+        \ganttbar[progress=100]{
+            Connect Current Clamp
+        }{6}{6} \ganttnewline
+        \ganttbar[progress=0]{
+            Connect LiDAR
+        }{7}{7} \ganttnewline
+        \ganttbar[progress=67]{
+            Test
+        }{8}{8} \ganttnewline
+        \ganttbar[progress=67]{
+            Create Demo
+        }{9}{9} \ganttnewline
+    
+        \ganttgroup[progress=0]{Phase 3}{10}{14} \ganttnewline
+        \ganttbar[progress=0]{
+            Connect to PRT
+        }{10}{11} \ganttnewline
+        \ganttbar[progress=0]{
+            Power Hardware
+        }{12}{12} \ganttnewline
+        \ganttbar[progress=0]{
+            Hardware enclosure
+        }{13}{14} \ganttnewline
+    
+        \ganttgroup[progress=0]{Phase 4}{15}{18} \ganttnewline
+        \ganttbar[progress=0]{
+            Draft data architectures
+        }{15}{16} \ganttnewline
+        \ganttbar[progress=0]{
+            Configure data dumps
+        }{17}{18} \ganttnewline
+        
+        \ganttgroup[progress=0]{Phase 5}{19}{25} \ganttnewline
+        \ganttbar[progress=0]{
+            Format data
+        }{19}{20} \ganttnewline
+        \ganttbar[progress=0]{
+            Configure database
+        }{21}{22} \ganttnewline
+        \ganttbar[progress=0]{
+            Data generalization
+        }{23}{25} \ganttnewline
+    
+        \ganttgroup[progress=0]{Phase 6}{26}{32} \ganttnewline
+        \ganttbar[progress=0]{
+            Data analysis scripts
+        }{26}{28} \ganttnewline
+        \ganttbar[progress=0]{
+            Front-end data visualization
+        }{29}{32} \ganttnewline
+    
+        \ganttlink{elem0}{elem17}
+        \ganttlink{elem7}{elem17}
+        \ganttlink{elem13}{elem17}
+        \ganttlink{elem17}{elem20}
+        \ganttlink{elem17}{elem24}
+    \end{ganttchart}
+\end{adjustwidth}
+    

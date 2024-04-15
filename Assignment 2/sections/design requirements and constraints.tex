@@ -1,6 +1,31 @@
 \subsection{Technical Requirements}
 \subsubsection{Functional Requirements}
+The PRT data collection project has functional requirements that include PRT location tracking, power usage, and vehicle occupancy. 
+Other requirements include displaying data in a single-page user interface, calculating time to complete a ride as well as various accompanying statistics, and supplying data to PRT officials to increase the efficiency of the PRT system.
+\begin{enumerate}
+    \item Analyze location and power data.
+    \item Display data in a single-page user interface.
+    \item Track vehicle occupancy
+    \item Track vehicle location and time to complete a ride
+    \item Supply data to PRT officials to increase the efficiency of the PRT system
+\end{enumerate}
 \subsubsection{Engineering Requirements}
+In order to gather data about the PRT cars, it is necessary to equip the PRT cars with a Raspberry Pi 4 Model B as well as additional sensors such as a current clamp and LiDAR to track occupancy. 
+The devices should be non-visible to ensure they are not targeted by passengers and transmit the data wirelessly while at the platforms. 
+The transmission will be encrypted to prevent session hijacking and will be immediately stored in an SQL database. 
+The data collected will then be used to make predictions to better improve the PRT.
+\begin{enumerate}
+    \item Equip PRT cars with a Raspberry Pi 4 Model B.
+    \item Attach additional sensors (GPS, Current Clamp).
+    \item Devices should be non-visible to the occupants.
+    \item Data will be transmitted to the database while at PRT platforms.
+    \item Data will be transmitted wirelessly.
+    \item Data transmitted with be encrypted.
+    \item Data will be stored in a SQL database.
+    \item The database will be kept securely to ensure the confidentiality of data.
+    \item Use of Infrared or LiDAR to determine vehicle occupancy.
+    \item Use data collected to make predictions
+\end{enumerate}
 
 \subsection{Broader Constraints}
 \input{sections/design requirements and constraints/broader constraints.tex}

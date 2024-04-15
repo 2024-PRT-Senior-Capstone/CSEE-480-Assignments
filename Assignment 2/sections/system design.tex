@@ -5,7 +5,43 @@
 \input{sections/system design/system design.tex}
 
 \subsection{Risks}
+As with any project, there are risks involved in implementation of this project. 
+For the PRT cars, environmental factors like rainy weather conditions or elevated heat or cold temperatures may pose a threat to the data collection system or impact the system performance.
+
+In order for the project to be a convenient solution for the data collection problem, the solution needs to be easily maintainable. 
+Ensuring maintainability is crucial post-installation for system accessibility. 
+
+Security is paramount, with data encryption and secure transmission protocols mitigating risks. 
+
+Additionally, the choice of LiDAR sensors directly affects passenger eye health, highlighting the importance of careful selection.
+
 
 \subsection{Test Plans}
+To ensure that our solution meets the requirements specified, multiple stages and techniques of testing will be conducted. 
+As we are currently developing proofs of concept, our testing for this stage involves gathering data and observing that it is accurate and useful. 
+It is during this stage that we must observe the practicality of our initial ideas, noting what works and what doesn’t.
+
+Once the proof of concept for the entire design can be established, the next stage of testing will involve implementing a fully functional prototype in an environment that resembles the goal environment. 
+For this project, that environment is the PRT. 
+We must simulate the PRT, to the best of our ability, to create a demonstration of the product. 
+In this environment we will observe how our solution performs, measuring it against our predetermined goals. 
+
+Then, the solution must be stress tested to determine how the system will perform under different circumstances, some being situations that are not ideal. 
+By doing this, we can properly communicate the ranges of which the solution works.
+
+Once determined that the implementation is ready for use on the PRT, the data collection will begin on just a single car. 
+Should the system perform to standards, it could then be implemented on all cars in the PRT System.
+
 \subparagraph{GPS Data Visualization Proof of Concept:}
+\textit{Objective:} Using the GPS on the PRT to visualize a path as proof of concept.
+
+\textit{Procedure:} We will be attaching the GPS to the PRT vehicle and record its path through the GPS data. We will then use the test run to help us visualize the path traveled by the PRT vehicle.
+
+\textit{Outcome to be achieved:} We should be able to visualize the route from the GPS data and this will then demonstrate the effectiveness of the data collected by the GPS data during its route.
+
 \subparagraph{Current Clamp Testing with Space Heater:}
+\textit{Objective:} Verify the functionality of the current clamp on a space heater to show its effectiveness as a subtitle for the internal PRT
+
+\textit{Procedure:} We will attach the current clamp to a space heater and record its power usage. We will take and analyze the data received from this and measure the power of consumption.
+
+\textit{Outcome to be achieved:} We should be able to retrieve data from the space heater that shows the current clamp is accurate and working perfectly.

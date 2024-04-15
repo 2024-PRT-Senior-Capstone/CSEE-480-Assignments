@@ -1,11 +1,60 @@
 \subsubsection{Public Health, Safety, and Welfare}
+In order to ensure the Public Health and Safety of the passengers of the PRT, the operation of this project’s data collection solution will remain separate from the standard PRT System operation so as to remove the ability for our solution to create new or more frequent issues with PRT operation. 
+In terms of data collection, only necessary information will be collected with human-safe collection methods. 
+For example, the collection of capacity data will be done using LiDAR sensors that use Class 1 lasers. 
+A Class 1 laser is considered safe for human eyesight and poses no risk to eye health and safety
+The information collected will be used to inform decisions made about future PRT operation and future safety issues.
+
 \subsubsection{Global Constrains}
+Due to the locality of the project, there are no meaningful global constraints to follow. 
+Despite the fact that this project will only be implemented for WVU’s PRT System, the solution should be implemented in such a way that it may be applicable to different transportation methods worldwide.
+
 \subsubsection{Culture Constrains}
+As with the Global implications, the locality of our solution does not require extensive cultural considerations. 
+Our implementation will remain unobtrusive. 
+However, a potential cultural conflict may be present in the fact that our information gathering includes tracking PRT car capacity, and thus individuals. 
+To avoid controversy, our solution will use LiDAR cameras to conduct non-identifying imaging.
+
 \subsubsection{Social Constrains}
+The concept of facial tracking is often viewed as intrusive by the public. 
+Therefore, in our implementation of a PRT data gathering system, we will avoid controversy and potential privacy infringements by using LiDAR sensors to conduct imaging in a non-intrusive way. 
+The imaging data collected will be free from identifying information and thus allows the project to avoid privacy issues. 
+
 \subsubsection{Environmental Impact}
+The application of our project on the PRT System will not create new environmental hazards. 
+The power consumption of our Raspberry Pi based system is between 2 Watts for idle state and 7 Watts for 400\% CPU load \cite{pidramblePowerConsumption}. 
+This amount of power is negligible in terms of the scale the PRT system operates on. 
+
+The PRT System, which runs completely on electrical power, removes 2.2 tons of CO2 emissions each year \cite{wvuPersonalRapid}. 
+The purpose of tracking statistics related to power consumption of the PRT System is to identify ways in which the environmental savings can be further increased. 
+
+Also, in order to reduce energy waste during downtimes, the Raspberry Pi system can be accessed remotely to be shutdown.
+
 \subsubsection{Economic Factors}
+The novelty of our implementation lies in its construction. 
+By leveraging components that are available on the public market, we have been able to create a demonstration of our solution with less than \$100 USD. 
+It is necessary for a scalable system to consider the ways in which costs can be reduced in order to present a viable and accessible solution.
+
 \subparagraph{Marketing Requirements}
+\begin{enumerate}
+    \item An automated design for monitoring GPS, AC power, and passenger amount.
+    \item Low-cost devices compared to dedicated hardware.
+    \item Reduce congestion at PRT stations.
+    \item Protect PRT carts from damage due to higher-than-normal voltage.
+    \item Prevent PRT cars from unintentional shutdowns.
+\end{enumerate}
+
 \subparagraph{Mapping of Marketing Requirements to Engineering Requirements}
+Most of the requirements for our project's marketing and engineering aspects are directly proportional to each other, as using the hardware and software stated in the engineering requirements will allow us to collect enough data to meet the marketing requirements. Our engineering requirements will not directly cause lower congestion times, protection from combustion, and unintentional shutdowns. 
+This is because we will collect the data from our project in a non-harmful process and send it to the PRT engineering team, who can then make decisions to improve the PRT based on the data.
+
 \subparagraph{Engineering and Marketing Requirements Trade-off Chart}
+\input{sections/design requirements and constraints/tradeoff.tex}
+
 \subsubsection{Industry Standards}
 \subparagraph{Applicable Constrains and Standards}
+\begin{enumerate}
+    \item \textbf{Legal:} This project will have no negative impact on students riding the PRT, so there will not be any legal constraints for our PRT project.
+    \item \textbf{Privacy:} There isn't going to be any personal information collected on students riding the PRT. Instead, we will use LiDAR to determine car capacity.
+    \item \textbf{Sustainability:} This device can be used for several years to get data from the PRT. The device will also have secure housing to prevent outside forces from damaging it, increasing its sustainability.
+\end{enumerate}

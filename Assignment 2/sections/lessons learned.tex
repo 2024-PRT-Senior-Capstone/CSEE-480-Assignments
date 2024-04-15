@@ -1,3 +1,38 @@
 \subsection{Documentation}
+To maintain a streamlined workflow over the course of this project, we have utilized GitHub as a public-facing repository and Google Drive as a collaborative workspace to organize our documentation for the PRT module. 
+The git repository stores all the deliverables including assignment 1, a brief project proposal, and the final report. 
+All files can be accessed at: \url{https://github.com/2024-PRT-Senior-Capstone/CSEE-480-Assignments}
+
+Our group made use of a shared Google Drive to easily collaborate on creating documentation before submitting the final copy to the git repository. 
+Using Google Docs allowed us to easily create an outline, divide work, and leave feedback on others' work using the comments feature to create a quality final product. 
+In addition to documentation, Google Drive stores internal files such as architectures created, attendance, and external technical documentation.
+
+Overall, the group leveraged GitHub and Google Drive collaboration tools to effectively document the PRT System data collection and analysis project. 
 
 \subsection{Lessons Learned}
+Throughout the completion of the spring semester’s project goals, team members gained experience with new hardware, software applications, and project management skills. 
+
+The core of this project is a Raspberry Pi which is attached to the various data gathering tools. 
+As a result, we learned how to install an operating system on a Pi, and how to attach and initialize the sensors. 
+We went with a Linux installation on the Pi since most group members had experience with it. 
+However, we ran into some difficulty remotely accessing the Pi and gained knowledge of SSL, VNC, and installing libraries. 
+Overall, we knew we needed a method of accessing the Pi from our computers, however, we didn’t know the best method. 
+After trying a few different options, we decided to use a free software called Tailscale and learned that this was the most reliable method. 
+Essentially, Tailscale connects to the Raspberry Pi and provides a static IP to be used with SSH. 
+
+After attaching the GPS sensor and gaining a satellite connection, we were able to read raw data using a simple Python script. 
+Using an existing git repository, we were able to run a different script to translate that raw data into longitude and latitude coordinates. 
+We thought we would need to write a program to then translate that data into something more user-friendly that could be displayed on a map. 
+However, we conducted research and learned that Google Earth Pro accepts raw GPS data and will show the path traveled. 
+
+In terms of engineering lessons learned, the group agrees that often times, producing a quality solution requires piecing together pre-existing applications and services. 
+It is often more effective to use prior art in new projects so as to reduce time spent reinventing the wheel, so to speak.
+
+Many aspects of project management were learned during this semester. 
+Since this project had some physical components that needed to be ordered as a team, we researched the correct components to purchase. 
+As with most projects, we had an allotted budget and we needed to use our money wisely by being 100\% certain that our purchases wouldn’t go to waste. 
+Next, we needed to set and meet deadlines for ourselves. 
+Up until this point, many of us have only had deadlines set for us, however now we learned to break the scope of the project into realistic goals and then set deadlines accordingly. 
+Lastly, we learned what collaboration tools worked best for the group, for example, we chose to communicate via Discord and share files with Git, and Google Drive. 
+Again this was something we got to pick for ourselves rather than just being assigned a specific system. 
+Overall, we learned research skills and independence with project planning. 

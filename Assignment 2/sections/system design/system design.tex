@@ -1,0 +1,44 @@
+The solution that has been designed is an information system, a combination of hardware and software aimed at collecting and processing data and distributing it to a database over the internet.
+Further designing is required in collaboration with the PRT engineers to understand the physical implementation restrictions.
+
+\subsubsection{Timeline}
+The PRT Capstone project timeline fits into two semesters. 
+The whole timeline is shown below in Figure 6 as a Gantt chart. 
+The first semester focuses on the hardware portion of the project: connecting the GPS, current clamp, and LiDAR to the Raspberry Pi and testing each for successful integration and creation of a demo. 
+Once the integration is successful, the device will be tested by connecting it to the PRT. 
+Ending the first semester, after successful testing, the Pi is placed into an enclosure. 
+The second semester focuses on the software portion: configuring data to send to the Google Cloud, which hosts a SQL database. 
+Google Cloud will format the data before placing it into the SQL database, where it's sorted and stored. 
+Next, a web application interfaced with Grafana will visualize the sorted data with charts and graphs.
+
+\input{sections/system design/timeline.tex}
+\begin{center}
+    Fig 6. Timeline as a Gantt Chart
+\end{center}
+
+\subsubsection{Design Choices}
+Cost, privacy, safety, and protection are important factors to consider throughout the implementation of this design. 
+With a 200-dollar budget, making inexpensive decisions is crucial. 
+Although, LiDAR can be an expensive device that would consume 200 dollars alone \cite{linkedinEvaluateEnvironmental}. 
+There are also concerns with eye protection due to the use of lasers \cite{linkedinEvaluateEnvironmental}. 
+LiDAR using class 1 lasers is considered safe for human eyes and must be necessary for this project \cite{liaLaserHazard}. 
+Furthermore, finding the right one that is inexpensive is critical. 
+However, if such cases do not exist, a small camera for a Raspberry Pi would be a good alternative because they are cheap \cite{amazon}. 
+
+To mitigate privacy concerns in this project, encryption at rest, in transit, and use is necessary. 
+The camera, if used, will take snapshots of the PRT car at specific intervals to determine the number of people inside. 
+Furthermore, using Wi-Fi with this device instead of having a cellular connection keeps potential hackers from attempting to access the device when the Raspberry Pi is disconnected from Wi-Fi and collecting data.
+
+Increasing the safety of passengers with the device is vital for preventing or detecting harm done by the device itself or the PRT car. 
+As noted earlier, the LiDAR sensor must have class 1 lasers to deter eye damage to passengers. 
+In the event of faulty wires on the PRT car, the current clamp connected to the device will detect potential hazards and display them on the web application. 
+Any irregularities in the current clamp data are identifiable in the graphs and charts created in the web application.
+
+Protecting the Raspberry Pi and its connected components must be a high priority. 
+The device location on the PRT car is essential to prevent any passengers from breaking the device. 
+Placing the device inside the  PRT car–under the hood–prevents this destruction from a passenger. 
+Other factors like heat and electricity could also break this device. 
+To counteract these factors, a conformal coating, a type of electronic water-proofing, will shield the device circuitry. 
+To avoid catastrophic power supply issues, the Pi will be battery-powered if the Raspberry Pi system is entirely separate from the inner workings of the PRT car. 
+If the Pi connects to the PRT car's inner wiring, it will use a boost-buck converter to drop the PRT car’s voltage down to 5v. 
+This also protects the Pi against low and high voltage scenarios
